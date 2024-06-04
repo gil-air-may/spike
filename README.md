@@ -1,21 +1,69 @@
+Sure, here's a draft for your README:
+
+---
+
 # Spike
 
-**TODO: Add description**
+Spike is a minimalist WebSockets server built with Elixir, designed to demonstrate essential concepts like Plug and OTP without the overhead of a full framework. Instead of using the typical Cowboy Erlang server, Spike utilizes the modern, pure Elixir server called Bandit.
 
-## Installation
+## Getting Started
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `spike` to your list of dependencies in `mix.exs`:
+### Prerequisites
 
-```elixir
-def deps do
-  [
-    {:spike, "~> 0.1.0"}
-  ]
-end
+- Elixir 1.12+
+- Erlang/OTP 24+
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/gil-air-may/spike.git
+cd spike
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/spike>.
+Install dependencies:
 
+```bash
+mix deps.get
+```
+
+### Running the Server
+
+To start the WebSockets server:
+
+```bash
+mix run --no-halt
+```
+
+### Usage
+
+Open a WebSockets client and connect to:
+
+```
+ws://localhost:4000/socket
+```
+
+### Testing
+
+Run the tests with:
+
+```bash
+mix test
+```
+
+## Documentation
+
+For detailed documentation, refer to the `docs` folder.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+---
+
+Feel free to modify this to better fit your project's specifics.
