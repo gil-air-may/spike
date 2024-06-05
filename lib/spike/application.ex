@@ -8,7 +8,8 @@ defmodule Spike.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Bandit, plug: Spike.Router, scheme: :http, port: 4000}
+      {Bandit, plug: Spike.Router, scheme: :http, port: 4000},
+      Spike.ConnectionManager
       # Starts a worker by calling: Spike.Worker.start_link(arg)
       # {Spike.Worker, arg}
     ]
