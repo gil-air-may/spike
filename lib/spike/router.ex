@@ -10,7 +10,7 @@ defmodule Spike.Router do
 
   get "/websocket/:id" do
     conn
-    |> WebSockAdapter.upgrade(Spike.WebsocketHandler, conn, timeout: 600_000)
+    |> WebSockAdapter.upgrade(Spike.WebsocketProcess, conn, timeout: 600_000)
     |> halt()
   end
 
