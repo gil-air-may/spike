@@ -1,7 +1,3 @@
-Sure, here's a draft for your README:
-
----
-
 # Spike
 
 Spike is a minimalist WebSockets server built with Elixir, designed to demonstrate essential concepts like Plug and OTP without the overhead of a full framework. Instead of using the typical Cowboy Erlang server, Spike utilizes the modern, pure Elixir server called Bandit.
@@ -63,7 +59,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
-
 ---
-
-Feel free to modify this to better fit your project's specifics.
