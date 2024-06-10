@@ -43,7 +43,7 @@ ws://localhost:4000/[id]
 You can replace the [id] parameter with any number which will be assigned to your client.
 If you want to test without having to configure the frontend, I recommend downloading Postman and using it as a websocket client.
 
-## Contributing
+### Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
 ---
